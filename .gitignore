@@ -1,1 +1,20 @@
+# VS Code Workspace
 *.code-workspace
+
+# Local-only development files
+.local/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# Dependencies
+node_modules/
+dist/
+*.tsbuildinfo
+data/reports/
+
+# Build artifacts
+dist/
+coverage/

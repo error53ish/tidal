@@ -1,0 +1,19 @@
+{
+  "name": "tidal",
+  "private": true,
+  "workspaces": ["packages/*"],
+  "scripts": {
+    "build": "tsc -b",
+    "test": "vitest run --config vitest.config.ts",
+    "compare-datasets": "npm.cmd run build && node packages/dataset-ingestion/dist/cli.js"
+  },
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "tsx": "^4.20.0",
+    "typescript": "^5.8.0",
+    "vitest": "^3.2.0"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
